@@ -11,6 +11,7 @@ using namespace std;
 int main() {
 
 	char hex_digit;
+
 	int value = 0;
 
 	cout << "Enter a hex digit as a character (0-9, A-F, or a-f): ";
@@ -20,9 +21,9 @@ int main() {
 	
 	if ((hex_digit >= 'A') && (hex_digit <= 'F')) {
 		value = 10 + hex_digit - 'A';
-		cout << "The decimal value for hex digit " << hex_digit << " is " << value << endl;
+		cout << "CHAR The decimal value for hex digit " << hex_digit << " is " << value << endl;
 	} else if (isdigit(hex_digit)) {
-		cout << "The decimal value for hex digit " << hex_digit << " is " << hex_digit << endl;
+		cout << "DIGIT The decimal value for hex digit " << hex_digit << " is " << hex_digit << endl;
 	} else {
 		cout << hex_digit << " is an invalid input!" << endl;
 	}
